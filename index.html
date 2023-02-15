@@ -1,20 +1,340 @@
-<!--This an index from master branch-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Bootstrap Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<style>
+#more {display: none;}
+div {
+  text-align: justify;
+}
+img, div{
+  border-radius: 10px;
+}
+</style>
 </head>
 <body>
-   <div class="row">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand">Tutorial Republic</a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="#" class="nav-item nav-link active">Home</a>
+                  <a href="#" class="nav-item nav-link">Services</a>
+                  <a href="#" class="nav-item nav-link">About</a>
+                  <a href="#" class="nav-item nav-link">Contact</a>
+              </div>
+              <div class="navbar-nav ms-auto">  
+                  <a href="#" class="nav-item nav-link">Register</a>            	
+                  <a href="#" class="nav-item nav-link">Login</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <div class="container-fluid">
+      <div class="p-3 my-2 bg-light rounded-3">
+        <h4 class="text-warning text-center">
+          <b>Fancy display heading With faded secondary text</b>
+        </h4>
+        <div class="row p-3">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col" style="background-image: url('tree.jpg'); background-repeat: no-repeat; background-size: cover;">
+              </div>
+              <div class="col">
+                Containers are the most basic layout element in Bootstrap and 
+                are required when using the grid system. Containers are basically 
+                used to wrap content with some padding. They are also used to align the content 
+                horizontally center on the page in case of fixed width layout.
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col">
+                Containers are the most basic layout element in Bootstrap and 
+                are required when using the grid system. Containers are basically 
+                used to wrap content with some padding. They are also used to align the content 
+                horizontally center on the page in case of fixed width layout.
+              </div>
+              <div class="col" style="background-image: url('tree.jpg'); background-repeat: no-repeat; background-size: cover;">
+              </div>
+              
+            </div>
+            
+          </div>
+      </div>
+  </div>
+  <hr>
+  <div class="row p-3">
     <div class="col">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Phasellus imperdiet, nulla et dictum interdum, nisi lorem 
+        egestas vitae scel<span id="dots">...</span><span id="more">erisque enim 
+          ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor 
+          vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum 
+          nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc 
+          venenatis imperdiet sed ornare turpis. Donec vitae dui eget 
+          tellus gravida venenatis. Integer fringilla congue eros non 
+          fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
 
+      <button onclick="myFunction()" id="myBtn">Read more</button>
     </div>
-   </div>
-    <footer class="footer ">
-        <p class="something"></p>
-    </footer>
+    <div class="col p-3 text-warning" style="background-image: url('tree.jpg'); background-repeat: no-repeat; background-size: cover;">
+      Containers are the most basic layout element in Bootstrap and 
+      are required when using the grid system. Containers are basically 
+      used to wrap content with some padding. They are also used to align the content 
+      horizontally center on the page in case of fixed width layout.
+    </div>
+    <div class="col">
+      Containers are the most basic layout element in Bootstrap and 
+      are required when using the grid system. Containers are basically 
+      used to wrap content with some padding. They are also used to align the content 
+      horizontally center on the page in case of fixed width layout.
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col">
+      <table class="table table-success table-bordered table-striped table-hover table-responsive">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Clark</td>
+                <td>Kent</td>
+                <td>clarkkent@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>peterparker@mail.com</td>
+            </tr> 
+            <tr>
+                <td>3</td>
+                <td>John</td>
+                <td>Carter</td>
+                <td>johncarter@mail.com</td>
+            </tr>                   
+          </tbody>
+      </table>
+    </div>
+    <div class="col">
+      Containers are the most basic layout element in Bootstrap and 
+      are required when using the grid system. Containers are basically 
+      used to wrap content with some padding. They are also used to align the content 
+      horizontally center on the page in case of fixed width layout.Containers are the most basic layout element in Bootstrap and 
+      are required when using the grid system. Containers are basically 
+      used to wrap content with some padding. They are also used to align the content 
+      horizontally center on the page in case of fixed width layout.
+    </div>
+  </div>
+  
+  <hr>
+  <div class="row text-center" style="display: flex; justify-content: center;">
+    <ul class="list-inline">
+      <li class="list-inline-item">Home</li>
+      <li class="list-inline-item">Products</li>
+      <li class="list-inline-item">About Us</li>
+      <li class="list-inline-item">Contact</li>
+    </ul>
+    <dl class="row col-md-9 text-start">
+      <dt class="col-sm-3">User Agent</dt>
+      <dd class="col-sm-9">An HTML user agent is any device that interprets HTML documents.</dd>
+      <dt class="col-sm-3 text-truncate">Client-side Scripting</dt>
+      <dd class="col-sm-9">Client-side scripting generally refers to the category of computer programs on the web that are executed by the user's web browser.</dd>
+      <dt class="col-sm-3">Document Tree</dt>
+      <dd class="col-sm-9">The tree of elements encoded in the source document.</dd>
+    </dl>
+  </div>
+  <hr>
+  <div class="row text-center" style="display: flex; justify-content: center;">
+    <div class="row col-sm-6 text-center">
+      <ul class="list-group list-group-horizontal d-flex justify-content-center bg-light">
+        <a href="#" class="list-group-item bg-success list-group-item-action">Pictures</a>
+        <a href="#" class="list-group-item bg-success list-group-item-action">Documents</a>        
+        <a href="#" class="list-group-item bg-success list-group-item-action" >Music</a>
+        <a href="#" class="list-group-item bg-success list-group-item-action">Videos</a>
+    </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="row text-center" style="display: flex; justify-content: center;">
+  <div class="list-group col-sm-8 list-group-horizontal d-flex justify-content-center">
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi-house-fill"></i> Home
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi-camera-fill"></i> Pictures
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi-music-note-beamed"></i> Music
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi-film"></i> Videos
+    </a>
+  </div>
+  </div>
+  <hr>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-4 bg-success">
+      <form class="form-group p-4">
+        <div class="row d-flex justify-content-center">
+          <img src="lock.png" class="img-fluid rounded-circle" alt="Lock Picture" style="width: 40%; height:40%;">
+        </div>
+        <div class="row p-2">
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-person-workspace"></i></span>
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-person-workspace"></i></span>
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+        </div>
+        <div class="row p-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkRemember">
+                <label class="form-check-label" for="checkRemember">Remember me</label>
+            </div>
+        </div>
+        <div class="d-flex flex-row-reverse">
+          <button type="submit" class="btn btn-warning col-sm-4">Sign in</button>
+        </div>
+        
+    </form>
+    </div>
+  </div>
+  <hr>
+  <div class="form-check form-check-inline d-flex justify-content-center">
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck1">
+      <label class="form-check-label" for="customCheck1">Custom checkbox</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck2" checked>
+      <label class="form-check-label" for="customCheck2">Another custom checkbox</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck2" checked>
+      <label class="form-check-label" for="customCheck2">Another custom checkbox</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck2" checked>
+      <label class="form-check-label" for="customCheck2">Another custom checkbox</label>
+    </div>
+  </div>
+  <hr>
+  <div class="row p-2 form-group">
+    <div class="col-sm-4">
+      <select class="form-select">
+        <option selected>Custom select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>  
+  </div>
+  <div class="row p-2 form-group">
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>  
+  </div>
+  <hr>
+  <div class="input-group">
+    <span class="input-group-text"><i class="bi bi-person-workspace"></i></span>
+    <input type="text" class="form-control" placeholder="First name">
+    <input type="text" class="form-control" placeholder="Middle name">
+    <input type="text" class="form-control" placeholder="Last name">
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-5">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button type="button" class="btn btn-secondary">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="col-7">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Type something...">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </div>
+    </div>
+</div>
+<hr>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<hr>
+<img src="tree.jpg" class="rounded" alt="Rounded Image">
+<img src="tree.jpg" class="rounded-circle" alt="Circular Image" style="width: 100px; height:100px;">
+<img src="tree.jpg" class="img-thumbnail" alt="Thumbnail Image">
+<hr>
+      <footer>
+          <div class="row">
+              <div class="col-md-6">
+                  <p>Copyright &copy; @PLMUN 2023</p>
+              </div>
+              <div class="col-md-6 text-md-end">
+                  <a href="#" class="text-dark">Terms of Use</a> 
+                  <span class="text-muted mx-2">|</span> 
+                  <a href="#" class="text-dark">Privacy Policy</a>
+              </div>
+          </div>
+      </footer>
+  </div>    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Read more";
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read less";
+              moreText.style.display = "inline";
+            }
+    }
+    </script>
 </body>
 </html>
